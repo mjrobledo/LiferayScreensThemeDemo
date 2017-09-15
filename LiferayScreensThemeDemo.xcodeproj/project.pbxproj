@@ -14,6 +14,7 @@
 		0B91F37A1D94369A00B266E5 /* ImageGalleryView_demo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B91F3751D94369A00B266E5 /* ImageGalleryView_demo.xib */; };
 		0B91F37C1D9437D100B266E5 /* SlideShowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B91F37B1D9437D100B266E5 /* SlideShowLayout.swift */; };
 		52517E7E1F6C2F4F0092CB3B /* logo_pepsico.png in Resources */ = {isa = PBXBuildFile; fileRef = 52517E7D1F6C2F4F0092CB3B /* logo_pepsico.png */; };
+		52517E8A1F6C56920092CB3B /* BottomLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52517E891F6C56920092CB3B /* BottomLine.swift */; };
 		8873CEC91D10053700C630BC /* LiferayScreensThemeDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8873CEC81D10053700C630BC /* LiferayScreensThemeDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8873CF021D10084700C630BC /* LoginView_demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8873CED31D10084700C630BC /* LoginView_demo.swift */; };
 		8873CF031D10084700C630BC /* LoginView_demo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8873CED41D10084700C630BC /* LoginView_demo.xib */; };
@@ -75,6 +76,7 @@
 		52517E861F6C3FB00092CB3B /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
 		52517E871F6C3FB00092CB3B /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		52517E881F6C3FB00092CB3B /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		52517E891F6C56920092CB3B /* BottomLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomLine.swift; sourceTree = "<group>"; };
 		64C14D19BAD11F734F68101A /* Pods-LiferayScreensThemeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiferayScreensThemeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiferayScreensThemeDemo/Pods-LiferayScreensThemeDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8873CEC51D10053700C630BC /* LiferayScreensThemeDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiferayScreensThemeDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8873CEC81D10053700C630BC /* LiferayScreensThemeDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiferayScreensThemeDemo.h; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 		8873CED81D10084700C630BC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				52517E891F6C56920092CB3B /* BottomLine.swift */,
 				8873CED91D10084700C630BC /* String+Password.swift */,
 				8873CEDA1D10084700C630BC /* String+Validation.swift */,
 			);
@@ -471,6 +474,7 @@
 				8873CF1A1D10084700C630BC /* DemoThemeConstants.swift in Sources */,
 				8873CF0F1D10084700C630BC /* DDLFieldRadioTableCell_demo.swift in Sources */,
 				8873CF111D10084700C630BC /* DDLFieldSelectTableCell_default.swift in Sources */,
+				52517E8A1F6C56920092CB3B /* BottomLine.swift in Sources */,
 				8873CF041D10084700C630BC /* SignUpView_demo.swift in Sources */,
 				8873CF091D10084700C630BC /* DDLFieldDateTableCell_demo.swift in Sources */,
 				8873CF171D10084700C630BC /* DDLSubmitButtonTableCell_demo.swift in Sources */,

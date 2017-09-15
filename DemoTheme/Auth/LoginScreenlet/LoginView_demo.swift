@@ -57,21 +57,11 @@ import LiferayScreens
 		initialSetup(images: (emailMark!, emailFail!, emailFailMsg!))
 		initialSetup(images: (passwordMark!, passwordFail!, passwordFailMsg!))
         
-        self.pintaBorde(txt:userNameField)
-        self.pintaBorde(txt:passwordField)
+        userNameField?.pintaLinea()
+        passwordField?.pintaLinea()
+       
 	}
 
-    func pintaBorde(txt:textField){
-        txt.borderStyle = UITextBorderStyle.none
-        txt.backgroundColor = UIColor.clear
-        let width = 1.0
-        
-        let borderLine = UIView()
-        borderLine.frame = CGRect(x: 3, y: Double(self.frame.height) - width, width: Double(self.frame.width)-6, height: width)
-        
-        borderLine.backgroundColor = UIColor.gray
-        txt.addSubview(borderLine)
-    }
     
     
 	override public func createProgressPresenter() -> ProgressPresenter {
@@ -336,4 +326,18 @@ import LiferayScreens
 			}
 		}
 	}
+}
+
+extension UITextField{
+    func pintaLinea(){
+        self.borderStyle = UITextBorderStyle.none
+        self.backgroundColor = UIColor.clear
+        let width = 1.0
+        
+        let borderLine = UIView()
+        borderLine.frame = CGRect(x: 3, y: Double(self.frame.height) - width, width: Double(self.frame.width)-6, height: width)
+        
+        borderLine.backgroundColor = UIColor(red: 170/255, green: 170/255, blue:170/255, alpha: 1)
+        self.addSubview(borderLine)
+    }
 }
