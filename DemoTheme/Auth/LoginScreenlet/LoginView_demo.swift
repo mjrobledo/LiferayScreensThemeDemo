@@ -56,8 +56,24 @@ import LiferayScreens
 
 		initialSetup(images: (emailMark!, emailFail!, emailFailMsg!))
 		initialSetup(images: (passwordMark!, passwordFail!, passwordFailMsg!))
+        
+        self.pintaBorde(txt:userNameField)
+        self.pintaBorde(txt:passwordField)
 	}
 
+    func pintaBorde(txt:textField){
+        txt.borderStyle = UITextBorderStyle.none
+        txt.backgroundColor = UIColor.clear
+        let width = 1.0
+        
+        let borderLine = UIView()
+        borderLine.frame = CGRect(x: 3, y: Double(self.frame.height) - width, width: Double(self.frame.width)-6, height: width)
+        
+        borderLine.backgroundColor = UIColor.gray
+        txt.addSubview(borderLine)
+    }
+    
+    
 	override public func createProgressPresenter() -> ProgressPresenter {
 		if let spinner = self.spinner {
 			return DemoProgressPresenter(spinner: spinner, progressView: progressView)
