@@ -66,6 +66,15 @@
 		0B91F37B1D9437D100B266E5 /* SlideShowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideShowLayout.swift; sourceTree = "<group>"; };
 		1016027D9BB31D72DAAC1261 /* Pods-LiferayScreensThemeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiferayScreensThemeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiferayScreensThemeDemo/Pods-LiferayScreensThemeDemo.release.xcconfig"; sourceTree = "<group>"; };
 		52517E7D1F6C2F4F0092CB3B /* logo_pepsico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_pepsico.png; sourceTree = "<group>"; };
+		52517E801F6C3FB00092CB3B /* Mark Simonson - Proxima Nova Alt Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova Alt Black.otf"; sourceTree = "<group>"; };
+		52517E811F6C3FB00092CB3B /* Mark Simonson - Proxima Nova Alt Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova Alt Light.otf"; sourceTree = "<group>"; };
+		52517E821F6C3FB00092CB3B /* Mark Simonson - Proxima Nova Alt Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova Alt Regular.otf"; sourceTree = "<group>"; };
+		52517E831F6C3FB00092CB3B /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		52517E841F6C3FB00092CB3B /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		52517E851F6C3FB00092CB3B /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		52517E861F6C3FB00092CB3B /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		52517E871F6C3FB00092CB3B /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		52517E881F6C3FB00092CB3B /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
 		64C14D19BAD11F734F68101A /* Pods-LiferayScreensThemeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiferayScreensThemeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiferayScreensThemeDemo/Pods-LiferayScreensThemeDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8873CEC51D10053700C630BC /* LiferayScreensThemeDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiferayScreensThemeDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8873CEC81D10053700C630BC /* LiferayScreensThemeDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiferayScreensThemeDemo.h; sourceTree = "<group>"; };
@@ -149,9 +158,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		52517E7F1F6C3F970092CB3B /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				52517E801F6C3FB00092CB3B /* Mark Simonson - Proxima Nova Alt Black.otf */,
+				52517E811F6C3FB00092CB3B /* Mark Simonson - Proxima Nova Alt Light.otf */,
+				52517E821F6C3FB00092CB3B /* Mark Simonson - Proxima Nova Alt Regular.otf */,
+				52517E831F6C3FB00092CB3B /* Raleway-Bold.ttf */,
+				52517E841F6C3FB00092CB3B /* Raleway-ExtraLight.ttf */,
+				52517E851F6C3FB00092CB3B /* Raleway-Italic.ttf */,
+				52517E861F6C3FB00092CB3B /* Raleway-Light.ttf */,
+				52517E871F6C3FB00092CB3B /* Raleway-Regular.ttf */,
+				52517E881F6C3FB00092CB3B /* Raleway-Thin.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
 		8873CEBB1D10053700C630BC = {
 			isa = PBXGroup;
 			children = (
+				52517E7F1F6C3F970092CB3B /* fonts */,
 				8873CED01D10084700C630BC /* DemoTheme */,
 				8873CEC71D10053700C630BC /* LiferayScreensThemeDemo */,
 				8873CEC61D10053700C630BC /* Products */,

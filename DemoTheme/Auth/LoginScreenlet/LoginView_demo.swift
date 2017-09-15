@@ -14,9 +14,14 @@
 import UIKit
 import LiferayScreens
 
+protocol loginDelegate {
+    @objc optional func olvideClaveAcceso()
+}
 
 @IBDesignable public class LoginView_demo: LoginView_default, KeyboardLayoutable {
 
+    var delegateLogin:loginDelegate!
+    
 	@IBOutlet internal var emailMark: UIImageView?
 	@IBOutlet internal var passwordMark: UIImageView?
 
@@ -74,7 +79,7 @@ import LiferayScreens
 		keyboardManager.unregisterObserver()
 	}
 
-	override public func onPreAction(name name: String?, sender: AnyObject?) -> Bool {
+	override public func onPreAction(name: String?, sender: AnyObject?) -> Bool {
 		if name == "login-action" {
 			if !valid {
 				shakeEffect()
@@ -114,7 +119,11 @@ import LiferayScreens
 	@IBAction internal func simpleTap() {
 		self.endEditing(true)
 	}
-
+    
+    @IBAction internal func olvideClave() {
+        delegateLogin.olvideClaveAcceso()
+    }
+    
 	public func layoutWhenKeyboardShown( _ keyboardHeight: CGFloat,
 	                                     animation:(time: NSNumber, curve: NSNumber)) {
 		
