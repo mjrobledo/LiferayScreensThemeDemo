@@ -80,7 +80,7 @@ import LiferayScreens
 		keyboardManager.unregisterObserver()
 	}
 
-	override open func onPreAction(_ name: String?, sender: AnyObject?) -> Bool {
+	override open func onPreAction(name: String?, sender: AnyObject?) -> Bool {
 		if name == "login-action" {
 			if !valid {
 				shakeEffect()
