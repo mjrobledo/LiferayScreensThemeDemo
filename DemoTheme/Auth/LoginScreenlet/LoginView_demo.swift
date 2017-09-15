@@ -14,14 +14,9 @@
 import UIKit
 import LiferayScreens
 
-protocol loginDelegate {
-    optional func olvideClaveAcceso()
-}
 
 @IBDesignable public class LoginView_demo: LoginView_default, KeyboardLayoutable {
 
-    var delegateLogin:loginDelegate!
-    
 	@IBOutlet internal var emailMark: UIImageView?
 	@IBOutlet internal var passwordMark: UIImageView?
 
@@ -119,11 +114,7 @@ protocol loginDelegate {
 	@IBAction internal func simpleTap() {
 		self.endEditing(true)
 	}
-    
-    @IBAction internal func olvideClave() {
-        delegateLogin.olvideClaveAcceso()
-    }
-    
+
 	public func layoutWhenKeyboardShown( _ keyboardHeight: CGFloat,
 	                                     animation:(time: NSNumber, curve: NSNumber)) {
 		
