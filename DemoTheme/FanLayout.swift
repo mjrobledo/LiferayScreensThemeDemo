@@ -14,7 +14,7 @@
 
 import UIKit
 
-public class FanCollectionViewLayoutAttributes: UICollectionViewLayoutAttributes {
+open class FanCollectionViewLayoutAttributes: UICollectionViewLayoutAttributes {
 
 	var anchorPoint = CGPoint(x: 0.5, y: 0.5)
 	var angle: CGFloat = 0 {
@@ -24,7 +24,7 @@ public class FanCollectionViewLayoutAttributes: UICollectionViewLayoutAttributes
 		}
 	}
 
-	override public func copy(with zone: NSZone?) -> Any {
+	override open func copy(with zone: NSZone?) -> Any {
 		let copiedAttributes: FanCollectionViewLayoutAttributes =
 			super.copy(with: zone) as! FanCollectionViewLayoutAttributes
 		copiedAttributes.anchorPoint = self.anchorPoint
@@ -33,7 +33,7 @@ public class FanCollectionViewLayoutAttributes: UICollectionViewLayoutAttributes
 	}
 }
 
-public class FanLayout: UICollectionViewLayout {
+open class FanLayout: UICollectionViewLayout {
 
 	var attributesList = [FanCollectionViewLayoutAttributes]()
 
@@ -58,7 +58,7 @@ public class FanLayout: UICollectionViewLayout {
 		return atan(itemSize.width / radius)
 	}
 
-	override public var collectionViewContentSize: CGSize {
+	override open var collectionViewContentSize: CGSize {
 		if collectionView?.numberOfSections == 0 {
 			return CGSize.zero
 		}
@@ -72,7 +72,7 @@ public class FanLayout: UICollectionViewLayout {
 		return FanCollectionViewLayoutAttributes.self
 	}
 
-	override public func prepare() {
+	override open func prepare() {
 		super.prepare()
 
 		let anchorPointY = ((itemSize.height / 2.0) + radius) / itemSize.height
@@ -119,13 +119,13 @@ public class FanLayout: UICollectionViewLayout {
 		}
 	}
 
-	override public func layoutAttributesForElements(in rect: CGRect)
+	override open func layoutAttributesForElements(in rect: CGRect)
 			-> [UICollectionViewLayoutAttributes]? {
 			
 		return attributesList
 	}
 
-	override public func layoutAttributesForItem(at indexPath: IndexPath)
+	override open func layoutAttributesForItem(at indexPath: IndexPath)
 		-> UICollectionViewLayoutAttributes {
 
 			if (attributesList.count > indexPath.row) {
@@ -135,7 +135,7 @@ public class FanLayout: UICollectionViewLayout {
 			return attributesList.first!
 		}
 
-	override public func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
+	override open func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
 		return true
 	}
 }

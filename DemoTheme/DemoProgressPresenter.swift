@@ -15,10 +15,10 @@ import Foundation
 import LiferayScreens
 
 
-public class DemoProgressPresenter: MBProgressHUDPresenter {
+open class DemoProgressPresenter: MBProgressHUDPresenter {
 
-	private let _spinner: UIActivityIndicatorView
-	private let _progressView: UIView?
+	fileprivate let _spinner: UIActivityIndicatorView
+	fileprivate let _progressView: UIView?
 
 	public init(spinner: UIActivityIndicatorView, progressView: UIView?) {
 		_spinner = spinner
@@ -29,14 +29,14 @@ public class DemoProgressPresenter: MBProgressHUDPresenter {
 		super.init()
 	}
 
-	public override func showHUDInView(_ view: UIView, message: String?,
+	open override func showHUDInView(_ view: UIView, message: String?,
 		forInteractor interactor: Interactor) {
 
 		_spinner.startAnimating()
 		(_progressView ?? _spinner).isHidden = false
 	}
 
-	public override func hideHUDFromView(_ view: UIView?, message: String?,
+	open override func hideHUDFromView(_ view: UIView?, message: String?,
 		forInteractor interactor: Interactor, withError error: NSError?) {
 
 		_spinner.stopAnimating()

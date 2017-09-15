@@ -15,9 +15,9 @@ import UIKit
 import LiferayScreens
 
 
-public class DDLSubmitButtonTableCell_demo: DDLSubmitButtonTableCell_default {
+open class DDLSubmitButtonTableCell_demo: DDLSubmitButtonTableCell_default {
 
-	override public func awakeFromNib() {
+	override open func awakeFromNib() {
 		super.awakeFromNib()
 
 		submitButton?.layer.masksToBounds = false

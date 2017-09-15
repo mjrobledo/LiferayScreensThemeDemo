@@ -15,7 +15,7 @@ import UIKit
 import LiferayScreens
 
 
-@IBDesignable public class LoginView_demo: LoginView_default, KeyboardLayoutable {
+@IBDesignable open class LoginView_demo: LoginView_default, KeyboardLayoutable {
 
 	@IBOutlet internal var emailMark: UIImageView?
 	@IBOutlet internal var passwordMark: UIImageView?
@@ -43,7 +43,7 @@ import LiferayScreens
 
 	//MARK: SignUpView
 
-	override public func onSetTranslations() {
+	override open func onSetTranslations() {
 		userNameField!.placeholder = LocalizedString("demo", key: "signup-email", obj: self)
 		passwordField!.placeholder = LocalizedString("demo", key: "signup-password", obj: self)
 		emailLabel!.text = LocalizedString("demo", key: "signup-email-title", obj: self)
@@ -51,11 +51,11 @@ import LiferayScreens
 		emailFailMsg!.text = LocalizedString("demo", key: "signup-email-error", obj: self)
 	}
 
-	override public func onCreated() {
+	override open func onCreated() {
 		scrollView?.contentSize = scrollView!.frame.size
 
-		initialSetup(images: (emailMark!, emailFail!, emailFailMsg!))
-		initialSetup(images: (passwordMark!, passwordFail!, passwordFailMsg!))
+		initialSetup((emailMark!, emailFail!, emailFailMsg!))
+		initialSetup((passwordMark!, passwordFail!, passwordFailMsg!))
         
         userNameField?.pintaLinea()
         passwordField?.pintaLinea()
@@ -64,7 +64,7 @@ import LiferayScreens
 
     
     
-	override public func createProgressPresenter() -> ProgressPresenter {
+	override open func createProgressPresenter() -> ProgressPresenter {
 		if let spinner = self.spinner {
 			return DemoProgressPresenter(spinner: spinner, progressView: progressView)
 		}
@@ -72,15 +72,15 @@ import LiferayScreens
 		return super.createProgressPresenter()
 	}
 
-	override public func onShow() {
+	override open func onShow() {
 		keyboardManager.registerObserver(self)
 	}
 
-	override public func onHide() {
+	override open func onHide() {
 		keyboardManager.unregisterObserver()
 	}
 
-	override public func onPreAction(name: String?, sender: AnyObject?) -> Bool {
+	override open func onPreAction(_ name: String?, sender: AnyObject?) -> Bool {
 		if name == "login-action" {
 			if !valid {
 				shakeEffect()
@@ -92,7 +92,7 @@ import LiferayScreens
 		return true
 	}
 
-	private func shakeEffect() {
+	fileprivate func shakeEffect() {
 		let shake = CABasicAnimation(keyPath: "position")
 		shake.duration = 0.08
 		shake.repeatCount = 4
@@ -107,7 +107,7 @@ import LiferayScreens
 		loginButton?.layer.add(shake, forKey: "position")
 	}
 
-	private func initialSetup(images: (mark: UIImageView, fail: UIImageView, msg: UILabel)) {
+	fileprivate func initialSetup(_ images: (mark: UIImageView, fail: UIImageView, msg: UILabel)) {
 		images.msg.frame.origin.x = self.frame.size.width + 5
 
 		images.mark.alpha = 0
@@ -121,7 +121,7 @@ import LiferayScreens
 		self.endEditing(true)
 	}
 
-	public func layoutWhenKeyboardShown( _ keyboardHeight: CGFloat,
+	open func layoutWhenKeyboardShown( _ keyboardHeight: CGFloat,
 	                                     animation:(time: NSNumber, curve: NSNumber)) {
 		
 		var keyboardHeight = keyboardHeight

@@ -17,13 +17,13 @@ import TNRadioButtonGroup
 import LiferayScreens
 
 
-public class DDLFieldRadioTableCell_demo: DDLFieldRadioTableCell_default {
+open class DDLFieldRadioTableCell_demo: DDLFieldRadioTableCell_default {
 
-	override public var radioColor : UIColor {
+	override open var radioColor : UIColor {
 		return DemoThemeBasicGreen
 	}
 
-	override public var radioButtonWidth: Int {
+	override open var radioButtonWidth: Int {
 		return 12
 	}
 

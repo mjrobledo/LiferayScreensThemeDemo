@@ -14,7 +14,7 @@
 import UIKit
 import LiferayScreens
 
-@IBDesignable public class SignUpView_demo: SignUpView_default, KeyboardLayoutable {
+@IBDesignable open class SignUpView_demo: SignUpView_default, KeyboardLayoutable {
 
 	@IBOutlet internal var jobField: UITextField?
 
@@ -47,7 +47,7 @@ import LiferayScreens
 	internal var valid = false
 
 
-	override public var jobTitle: String? {
+	override open var jobTitle: String? {
 		get {
 			return nullIfEmpty(jobField!.text)
 		}
@@ -59,7 +59,7 @@ import LiferayScreens
 
 	//MARK: SignUpView
 
-	override public func onSetTranslations() {
+	override open func onSetTranslations() {
 		firstNameField!.placeholder = LocalizedString("demo", key: "signup-first-name", obj: self)
 		lastNameField!.placeholder = LocalizedString("demo", key: "signup-last-name", obj: self)
 		emailAddressField!.placeholder = LocalizedString("demo", key: "signup-email", obj: self)
@@ -75,24 +75,24 @@ import LiferayScreens
 		jobFailMsg!.text = LocalizedString("demo", key: "signup-job-error", obj: self)
 	}
 
-	override public func onCreated() {
+	override open func onCreated() {
 		scrollView?.contentSize = scrollView!.frame.size
 
-		initialSetup(images: (nameMark!, nameFail!, nameFailMsg!))
-		initialSetup(images: (emailMark!, emailFail!, emailFailMsg!))
-		initialSetup(images: (jobMark!, jobFail!, jobFailMsg!))
-		initialSetup(images: (passwordMark!, passwordFail!, passwordFailMsg!))
+		initialSetup((nameMark!, nameFail!, nameFailMsg!))
+		initialSetup((emailMark!, emailFail!, emailFailMsg!))
+		initialSetup((jobMark!, jobFail!, jobFailMsg!))
+		initialSetup((passwordMark!, passwordFail!, passwordFailMsg!))
 	}
 
-	override public func onShow() {
+	override open func onShow() {
 		keyboardManager.registerObserver(self)
 	}
 
-	override public func onHide() {
+	override open func onHide() {
 		keyboardManager.unregisterObserver()
 	}
 
-	override public func onPreAction(name name: String?, sender: AnyObject?) -> Bool {
+	override open func onPreAction(name: String?, sender: AnyObject?) -> Bool {
 		if name == "signup-action" {
 			if !valid {
 				shakeEffect()
@@ -104,7 +104,7 @@ import LiferayScreens
 		return true
 	}
 
-	private func shakeEffect() {
+	fileprivate func shakeEffect() {
 		let shake = CABasicAnimation(keyPath: "position")
 		shake.duration = 0.08
 		shake.repeatCount = 4
@@ -119,7 +119,7 @@ import LiferayScreens
 		signUpButton?.layer.add(shake, forKey: "position")
 	}
 
-	private func initialSetup(images: (mark: UIImageView, fail: UIImageView, msg: UILabel)) {
+	fileprivate func initialSetup(_ images: (mark: UIImageView, fail: UIImageView, msg: UILabel)) {
 
 		images.msg.frame.origin.x = self.frame.size.width + 5
 
@@ -134,7 +134,7 @@ import LiferayScreens
 		self.endEditing(true)
 	}
 
-	public func layoutWhenKeyboardShown( _ keyboardHeight: CGFloat,
+	open func layoutWhenKeyboardShown( _ keyboardHeight: CGFloat,
 	    animation:(time: NSNumber, curve: NSNumber)) {
 
 		var keyboardHeight = keyboardHeight

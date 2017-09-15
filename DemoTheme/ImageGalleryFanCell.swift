@@ -10,27 +10,27 @@ import UIKit
 import LiferayScreens
 import Kingfisher
 
-public class ImageGalleryFanCell: UICollectionViewCell {
+open class ImageGalleryFanCell: UICollectionViewCell {
 
-	@IBOutlet private weak var previewImage: UIImageView!
+	@IBOutlet fileprivate weak var previewImage: UIImageView!
 
-	private var placeholderImage: UIImage?
+	fileprivate var placeholderImage: UIImage?
 
-	private var startAnchorPoint: CGPoint?
+	fileprivate var startAnchorPoint: CGPoint?
 
-	public var imageUrl: String  {
+	open var imageUrl: String  {
 		get {
 			return ""
 		}
 		set {
 			previewImage.lr_setImageWithURL(
-				NSURL(string: newValue)! as URL,
+				URL(string: newValue)! as URL,
 				placeholderImage:  placeholderImage,
 				optionsInfo: [.backgroundDecode])
 		}
 	}
 
-	public var image: UIImage {
+	open var image: UIImage {
 		get {
 			return UIImage()
 		}
@@ -39,7 +39,7 @@ public class ImageGalleryFanCell: UICollectionViewCell {
 		}
 	}
 
-	public override func awakeFromNib() {
+	open override func awakeFromNib() {
 		super.awakeFromNib()
 		startAnchorPoint = self.layer.anchorPoint
 
@@ -58,13 +58,13 @@ public class ImageGalleryFanCell: UICollectionViewCell {
 		backgroundColor = .white
 	}
 
-	public override func prepareForReuse() {
+	open override func prepareForReuse() {
 		super.prepareForReuse()
 
 		previewImage.image = placeholderImage
 	}
 
-	override public func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
+	override open func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
 	  	super.apply(layoutAttributes)
 
 		guard let circularlayoutAttributes = layoutAttributes as? FanCollectionViewLayoutAttributes

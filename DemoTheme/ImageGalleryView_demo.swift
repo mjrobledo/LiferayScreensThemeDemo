@@ -16,17 +16,17 @@ import UIKit
 import LiferayScreens
 
 
-public class ImageGalleryView_demo : ImageGalleryCollectionViewBase {
+open class ImageGalleryView_demo : ImageGalleryCollectionViewBase {
 
 	let imageCellId = "imageCellId"
 
 	// MARK: BaseListCollectionView
 
-	public override func doConfigureCollectionView(_ collectionView: UICollectionView) {
+	open override func doConfigureCollectionView(_ collectionView: UICollectionView) {
 		collectionView.backgroundColor = .black
 	}
 
-	public override func doRegisterCellNibs() {
+	open override func doRegisterCellNibs() {
 		if let imageGalleryGridCellNib = Bundle.nibInBundles(
 			name: "ImageGalleryFanCell",
 			currentClass: type(of: self)) {
@@ -37,12 +37,12 @@ public class ImageGalleryView_demo : ImageGalleryCollectionViewBase {
 		}
 	}
 
-	public override func doCreateLayout() -> UICollectionViewLayout {
+	open override func doCreateLayout() -> UICollectionViewLayout {
 		return FanLayout()
 	}
 
-	override public func doFillLoadedCell(
-		indexPath indexPath: IndexPath,
+	override open func doFillLoadedCell(
+		indexPath: IndexPath,
 		          cell: UICollectionViewCell,
 		          object:AnyObject) {
 
@@ -58,11 +58,11 @@ public class ImageGalleryView_demo : ImageGalleryCollectionViewBase {
 		}
 	}
 
-	public override func doGetCellId(indexPath indexPath: IndexPath, object: AnyObject?) -> String {
+	open override func doGetCellId(indexPath: IndexPath, object: AnyObject?) -> String {
 		return imageCellId
 	}
 
-	public override func collectionView(
+	open override func collectionView(
 		_ collectionView: UICollectionView,
 		didSelectItemAt indexPath: IndexPath) {
 
