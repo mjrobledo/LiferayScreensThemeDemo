@@ -15,7 +15,7 @@ import UIKit
 import LiferayScreens
 
 protocol loginDelegate {
-    @objc optional func olvideClaveAcceso()
+    optional func olvideClaveAcceso()
 }
 
 @IBDesignable public class LoginView_demo: LoginView_default, KeyboardLayoutable {
