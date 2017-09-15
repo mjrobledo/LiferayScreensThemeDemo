@@ -15,6 +15,6 @@ import UIKit
 import LiferayScreens
 
 
-open class DDLFormView_demo: DDLFormView_default {
+public class DDLFormView_demo: DDLFormView_default {
 
 }

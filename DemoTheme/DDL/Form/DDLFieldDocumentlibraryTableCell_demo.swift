@@ -15,11 +15,11 @@ import UIKit
 import LiferayScreens
 
 
-open class DDLFieldDocumentlibraryTableCell_demo: DDLFieldDocumentlibraryTableCell_default {
+public class DDLFieldDocumentlibraryTableCell_demo: DDLFieldDocumentlibraryTableCell_default {
 
 	@IBOutlet weak var chooseButton: UIButton?
 
-	open override func awakeFromNib() {
+	public override func awakeFromNib() {
 		super.awakeFromNib()
 
  		chooseButton?.layer.masksToBounds = false

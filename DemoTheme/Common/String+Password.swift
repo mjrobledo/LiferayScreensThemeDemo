@@ -20,7 +20,7 @@ extension String {
 	}
 
 	public var hasDigits: Bool {
-		let nonDigits = CharacterSet.decimalDigits.inverted
+		let nonDigits = NSCharacterSet.decimalDigits.inverted
 		let numbers = self.components(separatedBy: nonDigits)
 		return (numbers.joined(separator: "") != "")
 	}

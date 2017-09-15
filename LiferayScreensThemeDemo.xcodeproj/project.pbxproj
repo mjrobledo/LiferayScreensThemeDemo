@@ -13,7 +13,7 @@
 		0B91F3791D94369A00B266E5 /* ImageGalleryView_demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B91F3741D94369A00B266E5 /* ImageGalleryView_demo.swift */; };
 		0B91F37A1D94369A00B266E5 /* ImageGalleryView_demo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B91F3751D94369A00B266E5 /* ImageGalleryView_demo.xib */; };
 		0B91F37C1D9437D100B266E5 /* SlideShowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B91F37B1D9437D100B266E5 /* SlideShowLayout.swift */; };
-		6B658196365EF6A8E1435056 /* Pods_LiferayScreensThemeDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6FFB97D7D87D45ADF007F3 /* Pods_LiferayScreensThemeDemo.framework */; };
+		52517E911F6C854C0092CB3B /* logo_pepsico.png in Resources */ = {isa = PBXBuildFile; fileRef = 52517E901F6C854C0092CB3B /* logo_pepsico.png */; };
 		8873CEC91D10053700C630BC /* LiferayScreensThemeDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8873CEC81D10053700C630BC /* LiferayScreensThemeDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8873CF021D10084700C630BC /* LoginView_demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8873CED31D10084700C630BC /* LoginView_demo.swift */; };
 		8873CF031D10084700C630BC /* LoginView_demo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8873CED41D10084700C630BC /* LoginView_demo.xib */; };
@@ -64,8 +64,18 @@
 		0B91F3741D94369A00B266E5 /* ImageGalleryView_demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGalleryView_demo.swift; sourceTree = "<group>"; };
 		0B91F3751D94369A00B266E5 /* ImageGalleryView_demo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageGalleryView_demo.xib; sourceTree = "<group>"; };
 		0B91F37B1D9437D100B266E5 /* SlideShowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideShowLayout.swift; sourceTree = "<group>"; };
-		64C14D19BAD11F734F68101A /* Pods-LiferayScreensThemeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiferayScreensThemeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiferayScreensThemeDemo/Pods-LiferayScreensThemeDemo.release.xcconfig"; sourceTree = "<group>"; };
 		1016027D9BB31D72DAAC1261 /* Pods-LiferayScreensThemeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiferayScreensThemeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiferayScreensThemeDemo/Pods-LiferayScreensThemeDemo.release.xcconfig"; sourceTree = "<group>"; };
+		52517E901F6C854C0092CB3B /* logo_pepsico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_pepsico.png; sourceTree = "<group>"; };
+		52517E931F6C856F0092CB3B /* Mark Simonson - Proxima Nova Alt Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova Alt Black.otf"; sourceTree = "<group>"; };
+		52517E941F6C856F0092CB3B /* Mark Simonson - Proxima Nova Alt Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova Alt Light.otf"; sourceTree = "<group>"; };
+		52517E951F6C856F0092CB3B /* Mark Simonson - Proxima Nova Alt Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova Alt Regular.otf"; sourceTree = "<group>"; };
+		52517E961F6C856F0092CB3B /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		52517E971F6C856F0092CB3B /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		52517E981F6C856F0092CB3B /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		52517E991F6C856F0092CB3B /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		52517E9A1F6C856F0092CB3B /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		52517E9B1F6C856F0092CB3B /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		64C14D19BAD11F734F68101A /* Pods-LiferayScreensThemeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiferayScreensThemeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiferayScreensThemeDemo/Pods-LiferayScreensThemeDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8873CEC51D10053700C630BC /* LiferayScreensThemeDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiferayScreensThemeDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8873CEC81D10053700C630BC /* LiferayScreensThemeDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiferayScreensThemeDemo.h; sourceTree = "<group>"; };
 		8873CECA1D10053700C630BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -148,9 +158,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		52517E921F6C855D0092CB3B /* font */ = {
+			isa = PBXGroup;
+			children = (
+				52517E931F6C856F0092CB3B /* Mark Simonson - Proxima Nova Alt Black.otf */,
+				52517E941F6C856F0092CB3B /* Mark Simonson - Proxima Nova Alt Light.otf */,
+				52517E951F6C856F0092CB3B /* Mark Simonson - Proxima Nova Alt Regular.otf */,
+				52517E961F6C856F0092CB3B /* Raleway-Bold.ttf */,
+				52517E971F6C856F0092CB3B /* Raleway-ExtraLight.ttf */,
+				52517E981F6C856F0092CB3B /* Raleway-Italic.ttf */,
+				52517E991F6C856F0092CB3B /* Raleway-Light.ttf */,
+				52517E9A1F6C856F0092CB3B /* Raleway-Regular.ttf */,
+				52517E9B1F6C856F0092CB3B /* Raleway-Thin.ttf */,
+			);
+			name = font;
+			sourceTree = "<group>";
+		};
 		8873CEBB1D10053700C630BC = {
 			isa = PBXGroup;
 			children = (
+				52517E921F6C855D0092CB3B /* font */,
 				8873CED01D10084700C630BC /* DemoTheme */,
 				8873CEC71D10053700C630BC /* LiferayScreensThemeDemo */,
 				8873CEC61D10053700C630BC /* Products */,
@@ -261,6 +288,7 @@
 		8873CEF01D10084700C630BC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				52517E901F6C854C0092CB3B /* logo_pepsico.png */,
 				8873CEF11D10084700C630BC /* demo.strings */,
 				8873CEF31D10084700C630BC /* demo-calendar.png */,
 				8873CEF41D10084700C630BC /* demo-calendar@2x.png */,
@@ -283,7 +311,6 @@
 			children = (
 				EDA0B5DED99227A6E7CE16C5 /* Pods-LiferayScreensThemeDemo.debug.xcconfig */,
 				64C14D19BAD11F734F68101A /* Pods-LiferayScreensThemeDemo.release.xcconfig */,
-				01F9B6A420B8F0438A0458A1 /* Pods-LiferayScreensThemeDemo.debug.xcconfig */,
 				1016027D9BB31D72DAAC1261 /* Pods-LiferayScreensThemeDemo.release.xcconfig */,
 			);
 			name = Pods;
@@ -377,6 +404,7 @@
 				8873CF241D10084700C630BC /* demo-form-gradient-bottom.png in Resources */,
 				8873CF141D10084700C630BC /* DDLFieldTextTableCell_demo.xib in Resources */,
 				8873CF181D10084700C630BC /* DDLSubmitButtonTableCell_demo.xib in Resources */,
+				52517E911F6C854C0092CB3B /* logo_pepsico.png in Resources */,
 				8873CF201D10084700C630BC /* demo-check.png in Resources */,
 				8873CF1C1D10084700C630BC /* demo-calendar.png in Resources */,
 				8873CF1B1D10084700C630BC /* demo.strings in Resources */,

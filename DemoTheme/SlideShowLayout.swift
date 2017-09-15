@@ -13,7 +13,7 @@
 */
 import UIKit
 
-open class SlideShowLayout : UICollectionViewFlowLayout {
+public class SlideShowLayout : UICollectionViewFlowLayout {
 
 	let DistanceBetweenCenters = CGFloat(233)
 	let ZoomFactor = CGFloat(0.8)
@@ -36,7 +36,7 @@ open class SlideShowLayout : UICollectionViewFlowLayout {
 		initialize()
 	}
 
-	open override func layoutAttributesForElements(
+	public override func layoutAttributesForElements(
 		in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
 			
 		guard let attributesArray = super.layoutAttributesForElements(in: rect)
@@ -55,11 +55,11 @@ open class SlideShowLayout : UICollectionViewFlowLayout {
 		return attributesCopy
 	}
 
-	open override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
+	public override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
 		return true
 	}
 
-	open override func layoutAttributesForItem(
+	public override func layoutAttributesForItem(
 		at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
 
 		guard let attributes = super.layoutAttributesForItem(at: indexPath as IndexPath)
@@ -74,7 +74,7 @@ open class SlideShowLayout : UICollectionViewFlowLayout {
 		return attributesCopy
 	}
 
-	open override func targetContentOffset(
+	public override func targetContentOffset(
 		forProposedContentOffset proposedContentOffset: CGPoint,
 			withScrollingVelocity velocity: CGPoint) -> CGPoint {
 
@@ -110,7 +110,7 @@ open class SlideShowLayout : UICollectionViewFlowLayout {
 		sectionInset = UIEdgeInsets(top: 10, left: 100, bottom: 10, right: 100)
 	}
 
-	internal func setAttributes(attributes: UICollectionViewLayoutAttributes, visibleRect: CGRect) {
+	internal func setAttributes(attributes attributes: UICollectionViewLayoutAttributes, visibleRect: CGRect) {
 		let distanceToCenter = visibleRect.midX - attributes.center.x
 		let normalizedDistance = distanceToCenter / DistanceBetweenCenters
 
